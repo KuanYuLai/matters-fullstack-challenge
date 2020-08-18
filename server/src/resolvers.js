@@ -5,4 +5,10 @@ module.exports = {
     article: (_, { id }, { dataSources }) =>
       dataSources.articleAPI.getArticleById({ articleId: id }),
   },
+  Mutation: {
+    addArticle: (_, { input }, { dataSources }) =>
+      dataSources.articleAPI.addArticle({
+        Input: input,
+      }),
+  },
 };

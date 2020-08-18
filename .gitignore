@@ -13,6 +13,9 @@
 # Dependency directories
 node_modules
 
+#orbitdb
+orbitdb
+
 # Output
 build
 dist
