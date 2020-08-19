@@ -26,3 +26,13 @@ Please write a simple website with the given features. The participant should cl
 In order to make the process shorter, we've provided template and config exmaples in `client` and `server`, and feel free to refactor them and use your favorite tools and packages.
 
 Note: although using IPFS/OrbitDB on frontend and omit server would be easier, please treat IPFS as an external service, and connect to it via a data fetching layer.
+
+## Launch Command
+### Server (localhost:8001)
+```
+cd server && npm start
+```
+### Client (localhost:8000)
+```
+cd client && npm start
+```
