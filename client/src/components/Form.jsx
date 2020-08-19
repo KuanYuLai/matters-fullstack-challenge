@@ -56,8 +56,16 @@ const Form = () => {
               Submit
             </button>
           </form>
-          {loading && (
-            <Redirect to={{ pathname: "/", state: { UploadComplete: true } }} />
+          {loading ? (
+            alert("Upload completed") ? (
+              console.log("Alert displayed")
+            ) : (
+              <Redirect
+                to={{ pathname: "/", state: { UploadComplete: true } }}
+              />
+            )
+          ) : (
+            console.log(" Null 2")
           )}
           {error && alert("Error submiting article. Please try again later")}
         </div>

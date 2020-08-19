@@ -9,9 +9,6 @@ class HomePage extends Component {
   render() {
     return (
       <React.Fragment>
-        {this.props.location.state.UploadComplete
-          ? alert("Article Uploaded")
-          : null}
         <List />
         <AddBtn />
       </React.Fragment>
